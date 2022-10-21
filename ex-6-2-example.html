@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+<!-- 
+    Reference: 
+    https://codepen.io/knaman2609/pen/Zbyjvv
+    https://pixabay.com/illustrations/donald-trump-america-president-5103361/ 
+-->
+
+<head>
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        body {
+            min-height: 100%;
+            background: #eee;
+            font-family: 'Lato', sans-serif;
+            font-weight: 400;
+            color: #222;
+            font-size: 20px;
+            line-height: 26px;
+            padding-bottom: 50px;
+            background-image:url("https://pbs.twimg.com/media/E-XbIDlVEAQpUsT?format=jpg&name=4096x4096");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: 2000px;
+        }
+
+        .container {
+            max-width: 700px;
+            background: #fff;
+            margin: 0px auto 0px;
+            box-shadow: 1px 1px 2px #DAD7D7;
+            border-radius: 3px;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .header {
+            margin-bottom: 30px;
+        }
+
+        .full-name {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .first-name {
+            font-weight: 700;
+        }
+
+        .last-name {
+            font-weight: 300;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+        }
+
+        .email,
+        .phone {
+            color: #999;
+            font-weight: 300;
+        }
+
+        .separator {
+            height: 10px;
+            display: inline-block;
+            border-left: 2px solid #999;
+            margin: 0px 10px;
+        }
+
+        .position {
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 10px;
+            text-decoration: underline;
+        }
+
+        .details {
+            line-height: 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section:last-of-type {
+            margin-bottom: 0px;
+        }
+
+        .section__title {
+            letter-spacing: 2px;
+            color: #54AFE4;
+            font-weight: bold;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .section__list-item {
+            margin-bottom: 40px;
+        }
+
+        .section__list-item:last-of-type {
+            margin-bottom: 0;
+        }
+
+        .left,
+        .right {
+            vertical-align: top;
+            display: inline-block;
+        }
+
+        .left {
+            width: 60%;
+        }
+
+        .right {
+            
+            width: 39%;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        a {
+            text-decoration: none;
+            color: #54AFE4;
+            
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #000;
+        }
+
+        .skills__item {
+            margin-bottom: 10px;
+        }
+
+        input {
+            display: none;
+        }
+
+        label {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: #C3DEF3;
+            border-radius: 20px;
+            margin-right: 3px;
+        }
+
+        input:checked+label {
+            background: #79A9CE;
+        }
+        .email-val{
+            display: inline;
+            color: #54AFE4;
+        }
+        .name{
+            color: coral;
+        }
+        img{
+            position: relative;
+        }
+        h1{
+            position: absolute;
+            text-align: center;
+            top:15px;
+            color: indigo;
+        }
+             
+    </style>
+</head>
+
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700' rel='stylesheet' type='text/css'>
+    
+    <div class="container">
+        <h1>One of my favorite vitrual youtubers</h1>
+        <div class="header">
+            <div class="full-name">
+                <span class="first-name">Ratna Petit</span>
+                <span class="last-name">(ラトナ・プティ)</span>
+            </div>
+            <div class="contact-info">
+                <span class="email">Affilation</span>
+                <span class="email-val"><a href="https://virtualyoutuber.fandom.com/wiki/NIJISANJI_(main_branch)"target="_blank"">NIJISANJI</a></span>
+                <span class="separator"></span>
+                <span class="phone">height</span>
+                <span class="phone-val">156(cm)</span>
+                <span class="separator"></span>
+                <span class="phone">Birthday:</span>
+                <span class="phone-val">14 October</span>
+            </div>
+
+            <div>
+                <img src="https://static.wikia.nocookie.net/virtualyoutuber/images/0/0b/Ratna_Petit_Portrait_2020.png/revision/latest/scale-to-width-down/350?cb=20210324024315" width="60%">
+            </div>
+
+            <div class="about">
+                <span class="position">channel:</span>
+                <span class="desc"><a href="https://www.youtube.com/channel/UCIG9rDtgR45VCZmYnd-4DUw" target="_blank">YouTube</a></span>
+                <span class="separator"></span>
+                <span class="desc"><a href="https://www.twitch.tv/shivfps" target="_blank">Twitch</a></span>
+            </div>
+            <div class="about">
+                <span class="position">Social Media:</span>
+                <span class="desc"><a href="https://twitter.com/ratna_petit" target="_blank">Twitter</a></span>
+            </div>
+        </div>
+        <div class="details">
+            <div class="section">
+                <div class="section__title">Profile</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                            <div class="name">Background</div>
+                            <div class="text">Her Twitter account created that month(June 2019), her first tweet was made on 8 August, she debuted during a stream on YouTube on 13 August.</div>
+                            <div class="duration">Duraiton: 28 June 2019 - now</div>                      
+                    </div>
+                    <div class="section__list-item">                
+                            <div class="name">Figure and Introduction</div>
+                            <div class="addr">She is red panda girl adventurer who wanders around the world in search of an undiscovered land. She was taken to this world in the middle of one of her adventures by chance.</div>
+                            
+                    </div>
+                    <div class="name">A video of her interact with CR member</div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yZQlec_3__A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__list">
+                    <div class="section__list-item">
+                            <div class="name">Fans name</div>
+                            <div class="addr">Puff Friends(ぷぅふれんず)</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">Realtionships</div>
+                <div class="section__list">
+                    <div class="section__list-item">
+                        <div class="name">Posanke(ポ三家)-->debut mate</div>
+                        <div class="text"><a href="https://virtualyoutuber.fandom.com/wiki/Ratna_Petit">Ratna Petit,</a><a href="https://virtualyoutuber.fandom.com/wiki/Amamiya_Kokoro" target="_blank">Amamiya Kokoro,</a><a href="https://virtualyoutuber.fandom.com/wiki/Eli_Conifer"target="_blank">Eli Conifer</a></div>
+                        <div class="desc"><img src="https://files.yande.re/sample/f0e52a9b1849fc94192dca5cb2f499cc/yande.re%20909400%20sample%20animal_ears%20nijisanji%20ratna_petit%20toki_%28toki_ship8%29.jpg" width="650px" height="650px"></div>
+                        <div class="desc"><img src="https://s1.zerochan.net/Amamiya.Kokoro.600.2868329.jpg" width="650px" height="650px"></div>
+                        <div class="desc"><img src="http://cdn.shopify.com/s/files/1/0577/1254/1891/collections/eeMI8mK0kAugvuWr.jpg?v=1633276276" width="650px" height="650px"></div>
+                    </div>
+
+                    <div class="section__list-item">
+                        <div class="name">VTuber最協決定戦teammate</div>
+                        <div class="text"><div class="text"><a href="https://virtualyoutuber.fandom.com/wiki/Ratna_Petit" target="_blank">Ratna Petit,</a><a href="https://virtualyoutuber.fandom.com/wiki/Ibrahim" target="_blank">Ibrahim,</a><a href="https://virtualyoutuber.fandom.com/wiki/Yuki_Chihiro"target="_blank">Yuki Chihiro</a></div>
+                        <div class="desc"><img src="https://files.yande.re/sample/695472e23f23074cde3c8e81473d683b/yande.re%20853776%20sample%20animal_ears%20bikini%20nijisanji%20open_shirt%20ratna_petit%20swimsuits%20yuuri_nayuta.jpg" width="650px" height="650px"></div>
+                        <div class="desc"><img src="https://static.wikia.nocookie.net/virtualyoutuber/images/a/ab/Ibrahim_Portrait.png/revision/latest/scale-to-width-down/350?cb=20210331022508" width="650px" height="650px"></div>
+                        <div class="desc"><img src="http://cdn.shopify.com/s/files/1/0577/1254/1891/collections/19UVumyQUKQFVnb2.jpg?v=1633513941" width="650px" height="650px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <div class="section__title">The games of she plays</div>
+                <div class="skills">
+                    <div class="skills__item">
+                        <div class="left">
+                            <div class="name">
+                                Apex Legend 
+                                <div class="name"><a href="https://www.ea.com/zh-tw/games/apex-legends"><img src="https://media.contentapi.ea.com/content/dam/apex-legends/images/2019/01/apex-featured-image-16x9.jpg.adapt.crop16x9.1023w.jpg" width="600px" height="500px"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills__item">
+                    <div class="left">
+                        <div class="name">
+                           Overwatch2
+                           <div class="name"><a href="https://tw.shop.battle.net/zh-tw/family/overwatch" target="_blank"><img src="https://assets.nintendo.com/image/upload/q_auto/f_auto/c_fill,w_1200/ncom/en_US/articles/2022/a-new-free-to-play-experience-with-35-incredible-heroes-22-global-maps-6-distinct-modes-and-more-jump-in-overwatch-2-on-oct-4/all_new_heroes_logo"width="600px" height="500px"></div>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="skills__item">
+                
+                    <div class="name">
+                       Spaltoon3
+                       <div class="name"><a href="https://www.nintendo.com.hk/switch/av5ja/" target="_blank"><img src="https://www.nintendo.tw/topics/article/article_img/a_220422_02/herobanner.jpg"width="600px" height="500px"></div>
+                </div>    
+            </div>
+        </div>  
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
